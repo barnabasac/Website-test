@@ -19,8 +19,8 @@
     --color-cream: #f8f6f3;
     --color-cream-dark: #ece8e3;
     
-    /* Typography */
-    --font-display: 'Playfair Display', Georgia, serif;
+    /* Typography - Syne for headers, DM Sans for body */
+    --font-display: 'Syne', sans-serif;
     --font-body: 'DM Sans', -apple-system, BlinkMacSystemFont, sans-serif;
     
     /* Spacing */
@@ -73,8 +73,9 @@ a {
 
 h1, h2, h3, h4 {
     font-family: var(--font-display);
-    font-weight: 500;
+    font-weight: 700;
     line-height: 1.2;
+    letter-spacing: -0.01em;
 }
 
 /* --------------------------------------------------------------------------
@@ -97,9 +98,10 @@ h1, h2, h3, h4 {
 .nav-logo {
     font-family: var(--font-display);
     font-size: 1.25rem;
-    font-weight: 500;
+    font-weight: 700;
     color: white;
     letter-spacing: 0.02em;
+    text-transform: uppercase;
 }
 
 .nav-links {
@@ -169,6 +171,7 @@ h1, h2, h3, h4 {
     color: white;
     margin-bottom: var(--space-sm);
     letter-spacing: -0.02em;
+    text-transform: uppercase;
 }
 
 .hero-subtitle {
@@ -205,6 +208,8 @@ h1, h2, h3, h4 {
     text-align: center;
     margin-bottom: var(--space-xl);
     color: var(--color-charcoal);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
 }
 
 .portfolio-category {
@@ -289,12 +294,52 @@ h1, h2, h3, h4 {
     font-size: 1.5rem;
     color: white;
     margin-bottom: var(--space-xs);
+    text-transform: uppercase;
+    letter-spacing: 0.02em;
 }
 
 .portfolio-tags {
     font-size: 0.8125rem;
     color: var(--color-amber-light);
     letter-spacing: 0.02em;
+}
+
+/* --------------------------------------------------------------------------
+   Instagram Feed Section
+   -------------------------------------------------------------------------- */
+.instagram-feed {
+    padding: var(--space-xl) var(--space-md);
+    background: var(--color-cream-dark);
+    text-align: center;
+}
+
+.instagram-feed h2 {
+    font-size: 2rem;
+    color: var(--color-charcoal);
+    margin-bottom: var(--space-xs);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+.instagram-feed .section-subtitle {
+    font-size: 1rem;
+    color: var(--color-warm-grey);
+    margin-bottom: var(--space-lg);
+}
+
+.instagram-feed .section-subtitle a {
+    color: var(--color-amber-dark);
+    font-weight: 500;
+    transition: color var(--transition-fast);
+}
+
+.instagram-feed .section-subtitle a:hover {
+    color: var(--color-amber);
+}
+
+.instagram-container {
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 /* --------------------------------------------------------------------------
@@ -314,6 +359,8 @@ h1, h2, h3, h4 {
     font-size: 2.5rem;
     color: white;
     margin-bottom: var(--space-md);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
 }
 
 .about p {
@@ -331,7 +378,7 @@ h1, h2, h3, h4 {
    -------------------------------------------------------------------------- */
 .contact {
     padding: var(--space-2xl) var(--space-md);
-    background: var(--color-cream-dark);
+    background: var(--color-cream);
 }
 
 .contact-content {
@@ -344,6 +391,8 @@ h1, h2, h3, h4 {
     font-size: 2.5rem;
     color: var(--color-charcoal);
     margin-bottom: var(--space-sm);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
 }
 
 .contact > .contact-content > p {
@@ -388,6 +437,7 @@ h1, h2, h3, h4 {
 .contact-value {
     font-family: var(--font-display);
     font-size: 1.25rem;
+    font-weight: 600;
     color: var(--color-charcoal);
 }
 
@@ -473,8 +523,9 @@ h1, h2, h3, h4 {
     
     .portfolio h2,
     .about h2,
-    .contact h2 {
-        font-size: 2rem;
+    .contact h2,
+    .instagram-feed h2 {
+        font-size: 1.75rem;
     }
     
     .portfolio-grid {
