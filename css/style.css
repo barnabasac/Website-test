@@ -355,6 +355,13 @@ h1, h2, h3, h4 {
 .about-content {
     max-width: 700px;
     margin: 0 auto;
+    text-align: center;
+}
+
+.about-logo {
+    height: 120px;
+    width: auto;
+    margin-bottom: var(--space-md);
 }
 
 .about h2 {
